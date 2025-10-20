@@ -510,7 +510,7 @@ body {
 :root.dark-theme .pricing-content__item::before {
     color: #fff;
 }
-:root.dark-theme .portfolio-menu__list--active {
+:root.dark-theme .portfolio-menu__list--active >.portfolio-menu__link {
     color: #fff;
 }
 :root.dark-theme .tabmenu__links--active >.tabmenu__link {
