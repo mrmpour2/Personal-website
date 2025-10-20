@@ -541,6 +541,25 @@ body {
 a{
     text-decoration: none;
 }
+button, a {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after, a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+button:active::after, a:active::after {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
 
 /* 
 ==================================================================
@@ -750,7 +769,7 @@ a{
 .mobile-menu__link{
     font-family: var(--Medium-font);
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 4rem;
     text-decoration: none;
     padding: 0 1.5rem;
 }
