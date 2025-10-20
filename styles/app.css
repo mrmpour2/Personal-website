@@ -1222,7 +1222,7 @@ Portfolio
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--Black);
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     cursor: pointer;
 }
 
@@ -1618,7 +1618,7 @@ box-shadow: 0 0 1rem rgba(0,0,0,0.1);
         display: block;
         z-index: 200;
     }
-    /* .cover{
+    .cover{
         position: fixed;
         top: 0;    
         bottom: 0;
@@ -1633,7 +1633,9 @@ box-shadow: 0 0 1rem rgba(0,0,0,0.1);
         .cover--show{
         opacity: 1;
         z-index: 99;
-    } */
+        pointer-events: all;
+
+    }
         .home__links{
         justify-content: center;
     }
@@ -1649,6 +1651,9 @@ box-shadow: 0 0 1rem rgba(0,0,0,0.1);
  }
         .cantact-map{
             display: none;
+        }
+        .portfolio-menu__items{
+         gap: 1rem;
         }
 
     .footer__text{
